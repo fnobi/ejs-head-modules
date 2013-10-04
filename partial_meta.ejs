@@ -1,0 +1,7 @@
+<% function partial_meta (buf, opts) { %>
+<!-- meta -->
+<meta charset="utf-8" /><% if (opts.description) { %>
+<meta name="description" content="<%= opts.description %>" /><% } %><% if (opts.keywords.length) { %>
+<meta name="keywords" content="<%= opts.keywords.join(', ') %>" /><% } %><% if (opts.favicon_url) { %>
+<link rel="shortcut icon" href="<%= opts.favicon_url %>" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="<%= opts.favicon_url %>" type="image/vnd.microsoft.icon" /><% } %><% } %>
