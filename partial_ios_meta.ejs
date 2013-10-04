@@ -1,6 +1,6 @@
 <% locals.partial_ios_meta = function (buf, opts) { %><% opts = opts || {} %>
 <!-- ios meta --><% if (opts.viewport) { %>
 <meta name="viewport" content="<%= opts.viewport.join(', ') %>" /><% } %>
-<meta name="apple-mobile-web-app-capable" content="<%= opts.capable ? 'yes' : 'no' %>">
-<meta name="apple-mobile-web-app-status-bar-style" content="<%= opts.status_bar || 'default' %>"><% if (opts.icon_url) { %>
+<meta name="apple-mobile-web-app-capable" content="<%= opts.capable ? 'yes' : 'no' %>" />
+<meta name="apple-mobile-web-app-status-bar-style" content="<%= opts.status_bar || 'default' %>" /><% if (opts.icon_url) { %>
 <link rel="apple-touch-icon" href="<%= opts.icon_url %>" /><% } %><% } %>
