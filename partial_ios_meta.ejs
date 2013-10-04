@@ -1,4 +1,4 @@
-<% function partial_ios_meta (buf, opts) { %>
+<% locals.partial_ios_meta = function (buf, opts) { %><% opts = opts || {} %>
 <!-- ios meta --><% if (opts.viewport) { %>
 <meta name="viewport" content="<%= opts.viewport.join(', ') %>" /><% } %>
 <meta name="apple-mobile-web-app-capable" content="<%= opts.capable ? 'yes' : 'no' %>">

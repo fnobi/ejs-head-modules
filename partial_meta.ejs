@@ -1,4 +1,4 @@
-<% function partial_meta (buf, opts) { %>
+<% locals.partial_meta = function (buf, opts) { %><% opts = opts || {} %>
 <!-- meta -->
 <meta charset="utf-8" /><% if (opts.description) { %>
 <meta name="description" content="<%= opts.description %>" /><% } %><% if (opts.keywords.length) { %>

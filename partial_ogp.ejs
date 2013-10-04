@@ -1,4 +1,4 @@
-<% function partial_ogp (buf, opts) { %>
+<% locals.partial_ogp = function (buf, opts) { %><% opts = opts || {} %>
 <!-- ogp --><% if (opts.app_id) { %>
 <meta property="fb:app_id" content="<%= opts.app_id %>"><% } %>
 <meta property="og:url" content="<%= opts.url %>">
